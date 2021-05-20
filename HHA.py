@@ -2,9 +2,8 @@
 import requests,sys,json,time,winsound
 from datetime import datetime
 from os import system,name
-URL = "https://haven.herominers.com/api/stats_address?address="
-f = 880
-l = 500
+f = 220
+l = 1000
 WD = []
 GW = []
 BA = []		
@@ -12,11 +11,18 @@ BA = []
 try:	
 	system('cls')
 	print("#####################################################################")
+	print("################# HeroMiners Crypto Worker Alerter###################")
+	print("#####################################################################")
+	print("#####################################################################")
 	print("Please wait approximatively 10 seconds for the script to initialize !")
 	print("#####################################################################")
 	print()
-	XHV = input("Please enter your XHV address: ")
-	URL = URL + XHV + "&longpoll=false"
+	
+	CRYPTO = input("Please enter the full name of your CRYPTO. (e.g: aeon,haven,monero): ")
+	
+	URL = "https://" + CRYPTO + ".herominers.com/api/stats_address?address="
+	ADDRESS = input("Please enter your crypto address:")
+	URL = URL + ADDRESS + "&longpoll=false"
 	intervalx = int(input("Please enter how many seconds do you want between each scans? (Recommended is 60 (1minute) or 600 (10minutes)): "))
 	if(intervalx <= 10):
 		intervalx = 10
