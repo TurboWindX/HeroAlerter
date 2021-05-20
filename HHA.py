@@ -13,9 +13,6 @@ try:
 	print("#####################################################################")
 	print("################# HeroMiners Crypto Worker Alerter###################")
 	print("#####################################################################")
-	print("#####################################################################")
-	print("Please wait approximatively 10 seconds for the script to initialize !")
-	print("#####################################################################")
 	print()
 	
 	CRYPTO = input("Please enter the full name of your CRYPTO. (e.g: aeon,haven,monero): ")
