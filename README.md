@@ -1,6 +1,5 @@
 # HeroAlerter
 Script to receive alerts when a worker is down on herominers.com
-WORKS ONLY ON WINDOWS
 
 usage:
 python3 halert.py
