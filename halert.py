@@ -21,7 +21,7 @@ try:
 	intervalx = int(input("Please enter how many seconds do you want between each scans? (Recommended is 60 (1minute) or 600 (10minutes)): "))
 	if(intervalx <= 10):
 		intervalx = 10
-	
+	brange = int(input("How many times should the system bell, bell?(Recommended 5):"))
 	
 	while 1:
 		time.sleep(intervalx)
@@ -50,8 +50,11 @@ try:
 			if(hr['hashrate'] == 0):
 				print(hr['name'] + " IS DOWN!!! ALERT ALERT ALERT ! ! !")
 				if(BA.count(hr['name']) >= 1):
-					print('\a')
-
+					for i in range(brange):
+						print('\a')
+						print(hr['name'] + " IS DOWN!!! ALERT ALERT ALERT ! ! !")
+						time.sleep(1)
+					
 
 			if(hr['hashrate'] >= 1):
 				print(hr['name'] + " IS OK.")
