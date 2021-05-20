@@ -22,7 +22,15 @@ try:
 	if(intervalx <= 10):
 		intervalx = 10
 	brange = int(input("How many times should the system bell, bell?(Recommended 5):"))
-	
+	r = requests.get(url = URL)
+	data = r.json()
+	data = data['workers']
+	for hr in data:
+			if(WD.count(hr['name']) <= 0):
+				WD.append(hr['name'])
+				x = input("Do you want to add " + hr['name'] + " on the BEEP alert list ? Y or N: ")
+				if(x[0].upper() == "Y"):
+					BA.append(hr['name'])
 	while 1:
 		time.sleep(intervalx)
 		r = requests.get(url = URL)
