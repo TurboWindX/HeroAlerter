@@ -1,9 +1,7 @@
 #!/usr/bin/python
-import requests,sys,json,time,winsound
+import requests,sys,json,time
 from datetime import datetime
 from os import system,name
-f = 220
-l = 1000
 WD = []
 GW = []
 BA = []		
@@ -23,8 +21,6 @@ try:
 	intervalx = int(input("Please enter how many seconds do you want between each scans? (Recommended is 60 (1minute) or 600 (10minutes)): "))
 	if(intervalx <= 10):
 		intervalx = 10
-
-	f = int(input("Please select BEEP frequency for the alerts. (Recommended 220-880): "))
 	
 	
 	while 1:
@@ -54,7 +50,7 @@ try:
 			if(hr['hashrate'] == 0):
 				print(hr['name'] + " IS DOWN!!! ALERT ALERT ALERT ! ! !")
 				if(BA.count(hr['name']) >= 1):
-					winsound.Beep(f,l)
+					print('\a')
 
 
 			if(hr['hashrate'] >= 1):
