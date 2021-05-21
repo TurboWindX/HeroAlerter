@@ -9,7 +9,7 @@ All you have to do is enter your cryptocurrency and enter your crypto address (n
 
 When a new worker is found, you can decide to add it to the "BEEP" list, this will decide if the system BEEP or not when the worker has an hashrate of 0.
 
-Donate to fight the system:
+Donate to fight the system: 
 Haven - XHV: hvs1Vs4GjeU1b88ojdf4WJ411etuGcyzHDb551aGZmFHHMB7dzPWpYn9vmiWayxty4hZf3SeeAzoqGpbsWHmzbK54DAdUf4d1L
 Bitcoin - BTC: bc1qjywjjgy2xjvwujnke7vhxcllqlp7q6jh734mx7
 Ethereum - ETH: 0x72bfb8084ec2610e1fe3d61b42941048f2fb1025
