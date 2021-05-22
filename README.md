@@ -11,5 +11,5 @@ When a new worker is found, you can decide to add it to the "BEEP" list, this wi
 
 Donate to fight the system</br>Haven - XHV: hvs1Vs4GjeU1b88ojdf4WJ411etuGcyzHDb551aGZmFHHMB7dzPWpYn9vmiWayxty4hZf3SeeAzoqGpbsWHmzbK54DAdUf4d1L</br>
 Bitcoin - BTC: bc1qjywjjgy2xjvwujnke7vhxcllqlp7q6jh734mx7</br>
-Ethereum - ETH: 0x72bfb8084ec2610e1fe3d61b42941048f2fb1025</br>
+Ethereum - ETH: 0x3ee7c0538e7320c3560314da70ec893f55f4662d</br>
 Cardano - ADA: addr1qyvnlwgauhuenhaagcdlty7yk6d36al30rd5m32uwdcu5c5me8sfk2ht0n0j9dy4rl6sn7rm7t0hdd4850xvfyfm5qtq0vun86
