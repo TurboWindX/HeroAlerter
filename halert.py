@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import requests,sys,json,time
-from playsound import playsound
+import pygame
+
 from datetime import datetime
 import os
 import platform
@@ -9,12 +10,15 @@ GW = []
 BA = []     
 
 def main():
-    try:    
+    try:   
+        pygame.init()
         sysos = platform.system()
+        
         if sysos == "Windows":
             os.system('cls')
             cwd = os.path.dirname(os.path.realpath(__file__))
             audio_file = cwd + '\\audio.wav'
+            Sound = pygame.mixer.Sound(audio_file)
             print("#####################################################################")
             print("################# HeroMiners Crypto Worker Alerter###################")
             print("#####################################################################")
@@ -69,7 +73,8 @@ def main():
                                 #print('\a')
                                 #print(hr['name'] + " IS DOWN!!! ALERT ALERT ALERT ! ! !")
                                 
-                                playsound(audio_file)
+                                Sound.play()
+
                                 
                             
 
@@ -88,6 +93,7 @@ def main():
             os.system('clear')
             cwd = os.path.dirname(os.path.realpath(__file__))
             audio_file = cwd + '/audio.wav'
+            Sound = pygame.mixer.Sound(audio_file)
             print("#####################################################################")
             print("################# HeroMiners Crypto Worker Alerter###################")
             print("#####################################################################")
@@ -141,8 +147,8 @@ def main():
                             for i in range(brange):
                                 #print('\a')
                                 #print(hr['name'] + " IS DOWN!!! ALERT ALERT ALERT ! ! !")
-                                
-                                playsound(audio_file)
+                                Sound.play()
+                                #playsound(audio_file)
                                 
                             
 
