@@ -7,7 +7,7 @@ python3 halert.py
 
 All you have to do is enter any cryptocurrency from herominers and enter your crypto address (needed to access workers list from herominers api), select the scan frequency, set a minimum hashrate(good for multi-gpu when only some of them hangs), and how many times the audio.wav should play.
 
-When a new worker is found, you can decide to add it to the alert list, this will decide if the system plays an audio file or not when the worker has an hashrate of 0.
+When a new worker is found, you can decide to add it to the alert list, this will decide if the system plays an audio file or not when the worker has an hashrate of 0 or lower than its configured mminimum hashrate.
 
 Donate to fight the system</br>Haven - XHV: hvs1Vs4GjeU1b88ojdf4WJ411etuGcyzHDb551aGZmFHHMB7dzPWpYn9vmiWayxty4hZf3SeeAzoqGpbsWHmzbK54DAdUf4d1L</br>
 Bitcoin - BTC: bc1qjywjjgy2xjvwujnke7vhxcllqlp7q6jh734mx7</br>
