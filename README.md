@@ -1,7 +1,7 @@
 # HeroAlerter
 Script to receive alerts when a worker is down or below it's configured hashrate, works with herominers.com
 
-usage:
+usage:</br>
 python3 -m pip install -r requirements.txt</br>
 python3 halert.py
 
