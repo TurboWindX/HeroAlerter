@@ -1,11 +1,11 @@
 # HeroAlerter
-Script to receive alerts when a worker is down on herominers.com
+Script to receive alerts when a worker is down or below it's configured hashrate, works with herominers.com
 
 usage:
 python3 halert.py
 
 
-All you have to do is enter your cryptocurrency and enter your crypto address (needed to access workers list from herominers), select the scan frequency and how many times the system bell should ring.
+All you have to do is enter any cryptocurrency from herominers and enter your crypto address (needed to access workers list from herominers api), select the scan frequency, set a minimum hashrate(good for multi-gpu when only some of them hangs), and how many times the audio.wav should play.
 
 When a new worker is found, you can decide to add it to the alert list, this will decide if the system plays an audio file or not when the worker has an hashrate of 0.
 
